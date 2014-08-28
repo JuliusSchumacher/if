@@ -2,15 +2,17 @@
     <head>
         <script>
             
-            var pass = prompt("Lösen: ");
+            var age = prompt("Ålder: "), film;
             
-            if(pass == "ada" || pass == "Glenn"){
-                alert("Inloggad som Göteborgare!");
-            }else if(pass == "admin"){
-                alert("Inloggad som admin")
-            } else {
-                alert("Icke sa Nicke!");
+            if(age < 7){
+                film = "Pettson och Findus";
+            }else if(age < 14){
+                film = "Frost"
             }
+            
+            
+            alert("Rekommenderad film: " + film);
+            
             
         </script>
     </head>
